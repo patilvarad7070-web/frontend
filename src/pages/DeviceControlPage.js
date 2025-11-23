@@ -22,7 +22,7 @@ import {
   AlertDialogTitle,
 } from '../components/ui/alert-dialog';
 
-const BACKEND_URL = "http://127.0.0.1:8000";
+const BACKEND_URL = "http://backend-qz8e.onrender.com";
 const API = `${BACKEND_URL}/api`;
 
 const DeviceControlPage = () => {

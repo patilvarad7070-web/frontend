@@ -8,7 +8,7 @@ import { Wand2, Upload, Save, Sparkles, Droplet, Camera, X, Palette } from 'luci
 import axios from 'axios';
 import { toast } from 'sonner';
 
-const BACKEND_URL = "http://127.0.0.1:8000";
+const BACKEND_URL = "http://backend-qz8e.onrender.com";
 const API = `${BACKEND_URL}/api`;
 
 const AIShadeFinder = () => {

@@ -4,7 +4,7 @@ import axios from "axios";
 const AuthContext = createContext();
 
 // ✅ HARD-CODE BACKEND URL (no undefined/api)
-const BACKEND_URL = "http://127.0.0.1:8000";
+const BACKEND_URL = "https://backend-qz8e.onrender.com";
 const API = `${BACKEND_URL}/api`;
 
 export const useAuth = () => {
