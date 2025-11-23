@@ -1,0 +1,27 @@
+{
+  "short_name": "Aura",
+  "name": "Aura Bespoke Beauty",
+  "description": "Your perfect lip shade, every time. Custom-mix and dispense lipstick on demand.",
+  "icons": [
+    {
+      "src": "https://customer-assets.emergentagent.com/job_color-mixer-3/artifacts/woth9i3p_file_00000000c23861f78aee62cf4aaa40ce~2%5B1%5D.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://customer-assets.emergentagent.com/job_color-mixer-3/artifacts/woth9i3p_file_00000000c23861f78aee62cf4aaa40ce~2%5B1%5D.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#f8bbd0",
+  "background_color": "#fce4ec",
+  "orientation": "portrait",
+  "scope": "/",
+  "categories": ["beauty", "lifestyle", "shopping"],
+  "lang": "en-US"
+}

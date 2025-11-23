@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
+    <meta name="theme-color" content="#f8bbd0" />
+    <meta name="description" content="Aura Bespoke Beauty - Your perfect lip shade, every time. Custom-mix and dispense lipstick on demand." />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Aura" />
+    
+    <!-- Android Chrome -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- iOS Safari -->
+    <link rel="apple-touch-icon" href="https://customer-assets.emergentagent.com/job_color-mixer-3/artifacts/woth9i3p_file_00000000c23861f78aee62cf4aaa40ce~2%5B1%5D.png" />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://customer-assets.emergentagent.com/job_color-mixer-3/artifacts/woth9i3p_file_00000000c23861f78aee62cf4aaa40ce~2%5B1%5D.png" />
+    
+    <title>Aura - Bespoke Beauty</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('%PUBLIC_URL%/service-worker.js')
+            .then((registration) => {
+              console.log('ServiceWorker registered:', registration);
+            })
+            .catch((error) => {
+              console.log('ServiceWorker registration failed:', error);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
