@@ -7,7 +7,7 @@ import { toast } from 'sonner';
 import bluetoothService from '../services/bluetoothService';
 import AuraLogo from '../components/AuraLogo';
 
-const BACKEND_URL = "http://api.aura-beauty-boutique.com";
+const BACKEND_URL = "https://api.aura-beauty-boutique.com";
 const API = `${BACKEND_URL}/api`;
 
 const HomePage = () => {
