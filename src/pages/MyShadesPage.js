@@ -16,7 +16,7 @@ import {
 } from "../components/ui/alert-dialog";
 
 // ⭐ FIXED BACKEND URL
-const BACKEND_URL = "http://backend-qz8e.onrender.com";
+const BACKEND_URL = "http://api.aura-beauty-boutique.com";
 const API = `${BACKEND_URL}/api`;
 
 const MyShadesPage = () => {
