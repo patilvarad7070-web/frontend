@@ -16,7 +16,7 @@ import SplashScreen from './components/SplashScreen';
 import OnboardingFlow from './components/OnboardingFlow';
 import PermissionRequest from './components/PermissionRequest';
 import { Toaster } from './components/ui/sonner';
-
+consol.log("rebuild version 1.1")
 const ProtectedRoute = ({ children }) => {
   const { token } = useAuth();
   return token ? children : <Navigate to="/login" />;
