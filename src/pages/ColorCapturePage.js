@@ -6,7 +6,7 @@ import { Camera, Upload, Save } from 'lucide-react';
 import axios from 'axios';
 import { toast } from 'sonner';
 
-const BACKEND_URL = "https://api.aura-beauty-boutique.com";
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
 const ColorCapturePage = () => {

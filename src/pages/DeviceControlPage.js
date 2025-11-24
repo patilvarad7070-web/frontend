@@ -22,7 +22,7 @@ import {
   AlertDialogTitle,
 } from '../components/ui/alert-dialog';
 
-const BACKEND_URL = "https://api.aura-beauty-boutique.com";
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
 const DeviceControlPage = () => {

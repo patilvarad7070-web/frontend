@@ -4,7 +4,7 @@ import axios from "axios";
 const AuthContext = createContext();
 
 // ✅ HARD-CODE BACKEND URL (no undefined/api)
-const BACKEND_URL = "https://api.aura-beauty-boutique.com";
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
 export const useAuth = () => {
