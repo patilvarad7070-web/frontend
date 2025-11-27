@@ -24,7 +24,7 @@ export const AuthProvider = ({ children }) => {
 
   const fetchUser = async () => {
     try {
-      const res = await axios.get(`${API}auth/me`, {
+      const res = await axios.get(`${API}/api/auth/me`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setUser(res.data);
@@ -36,7 +36,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   const login = async (email, password) => {
-    const res = await axios.post(`${API}auth/login`, { email, password });
+    const res = await axios.post(`${API}/api/auth/login`, { email, password });
     localStorage.setItem("aura_token", res.data.token);
     setToken(res.data.token);
     setUser(res.data.user);
@@ -44,7 +44,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   const register = async (email, password, full_name) => {
-    const res = await axios.post(`${API}auth/register`, {
+    const res = await axios.post(`${API}/api/auth/register`, {
       email,
       password,
       full_name,
@@ -62,7 +62,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   const updateProfile = async (profile) => {
-    await axios.put(`${API}auth/profile`, profile, {
+    await axios.put(`${API}/api/auth/profile`, profile, {
       headers: { Authorization: `Bearer ${token}` },
     });
     await fetchUser();
