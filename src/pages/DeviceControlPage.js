@@ -261,7 +261,7 @@ const DeviceControlPage = () => {
                       <SelectValue placeholder="Choose a shade to dispense" />
                     </SelectTrigger>
                     <SelectContent>
-                      {shades.map((shade) => (
+                      {Array.isArray(shades) && shades.map((shade) => (
                         <SelectItem key={shade.id} value={shade.id} data-testid={`shade-option-${shade.id}`}>
                           <div className="flex items-center space-x-3">
                             <div

@@ -219,12 +219,12 @@ const ColorCapturePage = () => {
                   <div className="grid grid-cols-2 gap-4 text-sm">
                     <div>
                       <p className="text-gray-500 font-medium">Hex</p>
-                      <p className="text-gray-800 font-mono" data-testid="hex-value">{result.hex_color}</p>
+                      <p className="text-gray-800 font-mono" data-testid="hex-value">{result?.hex_color}</p>
                     </div>
                     <div>
                       <p className="text-gray-500 font-medium">RGB</p>
                       <p className="text-gray-800 font-mono" data-testid="rgb-value">
-                        {result.dominant_color.r}, {result.dominant_color.g}, {result.dominant_color.b}
+                        {result?.dominant_color?.r}, {result?.dominant_color?.g}, {result?.dominant_color?.b}
                       </p>
                     </div>
                   </div>
