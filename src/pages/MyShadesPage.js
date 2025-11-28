@@ -37,11 +37,11 @@ const MyShadesPage = () => {
         headers: { Authorization: `Bearer ${token}` },
       });
 
-      // ⭐ FIXED — ALWAYS ARRAY
-      setShades(Array.isArray(res.data) ? res.data : []);
-    } catch (err) {
-      toast.error("Failed to load shades");
-    }
+    // FIXED — extract shades array properly
+    setShades(Array.isArray(res.data.shades) ? res.data.shades : []);
+  } catch (err) {
+    toast.error("Failed to load shades");
+  }
     setLoading(false);
   };
 
