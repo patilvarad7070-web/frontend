@@ -68,6 +68,8 @@ const DeviceControlPage = () => {
       const response = await axios.get(`${API}/shades`, {
         headers: { Authorization: `Bearer ${token}` }
       });
+
+      setShades(Array.isArray(response.data.shades) ? response.data.shades : []);
       setShades(response.data);
     } catch (error) {
       console.error('Failed to fetch shades:', error);
