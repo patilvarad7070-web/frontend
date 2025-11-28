@@ -45,16 +45,19 @@ const MyShadesPage = () => {
     setLoading(false);
   };
 
-  const handleDelete = async () => {
-    try {
-      await axios.delete(`${API}/shades/${shadeToDelete.id}`);
-      toast.success("Shade deleted");
-      fetchShades();
-    } catch (err) {
-      toast.error("Delete failed");
-    }
-    setDeleteDialogOpen(false);
-  };
+ const handleDelete = async () => {
+  try {
+    await axios.delete(`${API}/shades/${shadeToDelete.id}`, {
+      headers: { Authorization: `Bearer ${token}` },
+    });
+
+    toast.success("Shade deleted");
+    fetchShades();
+  } catch (err) {
+    toast.error("Delete failed");
+  }
+  setDeleteDialogOpen(false);
+};
 
   const handleQuickDispense = (shade) => {
     localStorage.setItem("quick_dispense_shade", JSON.stringify(shade));
